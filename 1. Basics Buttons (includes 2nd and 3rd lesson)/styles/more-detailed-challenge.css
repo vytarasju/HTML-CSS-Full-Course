@@ -1,0 +1,37 @@
+
+.link {
+  color: rgb(0, 113, 133);
+  transition: color 0.15s;
+}
+
+.link:hover {
+  color:rgb(184, 112, 3);
+}
+
+.item-text {
+  font-weight: bolder;
+}
+
+.price-text {
+  color: rgb(0, 150, 0);
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  border-radius: 17px;
+  width: 130px;
+  height: 33px;
+  transition: background-color .15s,
+    opacity .1s;
+}
+
+.add-button {background-color: rgb(255, 216, 20);}
+.buy-button {background-color: rgb(255, 164, 28);}
+
+.add-button:hover {background-color: rgb(229, 194, 19);}
+.add-button:active {opacity: 70%;}
+
+
+.buy-button:hover {background-color: rgb(255, 140, 25);}
+.buy-button:active {opacity: 70%;}

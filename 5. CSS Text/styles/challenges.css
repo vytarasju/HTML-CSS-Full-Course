@@ -1,0 +1,140 @@
+div {margin: 40px 0px;}
+
+.tahoma-text {
+  font-family: Tahoma, sans-serif; ;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.sale-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.sale-subtext {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.course-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 250px;
+  font-size: 15px;
+}
+.course-text > .course-title {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.course-text > .course-subtitle {
+  color: rgb(107, 104, 104);
+  margin-top: 3px;
+}
+
+.course-text > button {
+  color: white;
+  background-color: rgb(0, 154, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 15px;
+}
+
+.apple-text {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.apple-text > .apple-title {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.apple-text > .apple-subtitle {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.apple-text > a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(79, 79, 199);
+}
+
+.macbook-text {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.macbook-text > p {margin: 0px 0px;}
+
+.macbook-text > .macbook-new {
+  font-size: 14px;
+  color: rgb(208, 129, 25);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.macbook-text > .macbook-name {
+  font-weight: bold;
+}
+
+.macbook-text > .macbook-slogan {
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.macbook-text > button {
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(84, 84, 230);
+  color: white;
+  padding: 5px 10px;
+  margin-top: 12px;
+}
+
+.stock-text {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  line-height: 10px;
+}
+
+.stock-text > .stock-price {
+  font-size: 35px;
+  margin: 10px 0px;
+}
+
+.stock-text > .stock-price > span,
+.stock-text > .stock-greytext {
+  font-size: 18px;
+  color: grey;
+}
+
+.stock-text > .stock-greentext {color: rgb(0, 141, 0);}
+
+.stock-text > .stock-greytext > span {color: rgb(195, 0, 0);}
+
+.email-text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  max-width: 500px;
+}
+
+.email-text > .email-address {font-weight: bold;}
+
+.email-text > .email-address > span {
+  font-weight: normal;
+  color:grey;
+}
+
+.email-text > p > span {
+  color: dodgerblue;
+}

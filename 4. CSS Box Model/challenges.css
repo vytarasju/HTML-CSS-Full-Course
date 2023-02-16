@@ -1,0 +1,94 @@
+/* PAGINATION */
+.pagination > button {
+  background-color:rgb(235, 237, 228);
+  color: black;
+  border: 1px solid rgb(87, 98, 47);
+  border-radius: 2px;
+  padding: 8px 7px;
+  display: inline-block;
+  transition: opacity .15s;
+  cursor: pointer;
+}
+
+.pagination > button:hover {opacity: 80%}
+
+.pagination > button:active {opacity: 50%}
+
+.pagination > a {margin-right: 10px;}
+
+.pagination > .back-button {margin-right: 15px;}
+
+.pagination > .next-button {margin-left: 5px;}
+
+/* 3D Click */
+
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.shadow-button {
+  margin-top: 1px;
+  margin-left: 1px;
+  transition: box-shadow .15s,
+  margin-top .15s,
+  margin-left .15s;
+}
+.shadow-button:hover {
+  margin: 0;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, .3);
+}
+.shadow-button:active {
+  margin-top: 2px;
+  margin-left: 2px;
+  box-shadow: none;
+}
+
+/* Stretch button */
+.stretch-button {
+  transition: padding .6s,
+  opacity .15s;
+}
+
+.stretch-button:hover {
+  padding: 25px 50px;
+}
+
+.stretch-button:active {opacity: 50%;}
+
+/* Together buttons */
+.together-buttons > button {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: margin .2s,
+  padding .2s;
+}
+
+.together-buttons > .one:hover {
+  margin-right: 0px;
+  margin-left: 0px;
+
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.together-buttons > .two:hover {
+  margin-right: 0px;
+  margin-left: 0px;
+
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.together-buttons > .three:hover {
+  margin-right: 0px;
+  margin-left: 0px;
+
+  padding-right: 20px;
+  padding-left: 20px;
+}
