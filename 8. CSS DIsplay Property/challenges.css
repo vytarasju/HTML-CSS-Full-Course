@@ -1,0 +1,123 @@
+body {margin: 50px 100px;}
+p {
+  text-decoration:underline;
+  margin: 40px 0px 5px 0px;
+}
+
+.inputs-block > input{
+  display: block;
+  margin: 5px 0px;
+}
+
+.inline-block > p {
+  margin: 0px;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 250px;
+}
+
+.inline-block > button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.google-block > img {
+  display: block;
+  width: 200px;
+  margin: 10px  0px 10px 160px;
+
+}
+
+.google-block > input {
+  display: block;
+  width: 500px;
+  padding: 10px 15px 10px 15px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, .35);
+  border-radius: 15px;
+}
+
+.google-block > input:focus{
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .45);
+}
+
+.signup-block > * {
+  margin-bottom: 5px;
+}
+
+.signup-block > input {
+  display:inline-block;
+  border: 1px solid gray;
+  border-radius: 8px;
+  width: 150px;
+  padding: 10px 10px;
+}
+
+.signup-block > .email-input {
+  display: block;
+  width: 327px;
+}
+
+.signup-block > button {
+  display: block;
+  padding: 10px 143.5px;
+  background-color: #4c8BF5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color .15s,
+  opacity .1s;
+}
+
+.signup-block > button:hover {
+  background-color: #709eec;
+}
+
+.signup-block > button:active {
+  opacity: 70%;
+}
+
+.uber-block > * {margin: 20px 0px;}
+
+.uber-block > h1 {font-family: Arial, Helvetica, sans-serif;}
+
+.uber-block > input {
+  display: block;
+  background-color: whitesmoke;
+  border: none;
+  padding: 15px 25px;
+  width: 350px;
+}
+
+.uber-block > input:focus {
+  outline: none;
+  background-color: rgb(236, 233, 233);
+}
+
+.uber-block > .location-input {margin-bottom: 5px;}
+
+.uber-block > .destination-input {margin-top: 5px;}
+
+.uber-block > button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  transition: opacity .1s,
+  background-color .1s;
+}
+
+.uber-block > .schedule-button {
+  background-color: whitesmoke;
+  color: black;
+  margin-left: 20px;
+}
+
+.uber-block > button:hover {opacity: 70%;}
+.uber-block > button:active {opacity: 50%;}
+.uber-block > .schedule-button:active {background-color: rgb(236, 233, 233);}
+
