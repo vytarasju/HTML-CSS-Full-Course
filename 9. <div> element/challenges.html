@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenges</title>
+  <link rel="stylesheet" href="challenges.css">
+</head>
+<body>
+  <p>DIV red square</p>
+  <div class="squarediv-box"></div>
+
+  <p>DIV green circle</p>
+  <div class="circlediv-box"></div>
+
+  <p>Survey box in a div</p>
+  <div class="survey-box">
+    <p>Satisfied with our service?</p>
+    <button>Yes</button>
+    <button class="no-button">No</button>
+  </div>
+
+  <p>Youtube Music ad</p>
+  <div class="ytmusic-box">
+    <h1>Install YouTube Music</h1>
+    <p>Add Youtubes Music to your desktop for quick and easy access</p>
+  </div>
+
+  <p> Twitter text box</p>
+  <div class="twitter-box">
+    <img src="images/cat.png">
+    <input type="text" placeholder="What's happening?">
+    <button>Tweet</button>
+  </div>
+
+  <p>Recreating "Add friend" box</p>
+  <div class="addfriend-box">
+    <img src="images/profilephoto-1.webp">
+    <div class="addfriend-description">
+      <p class="name-text">Oliver</p>
+      <p class="mutual-text">2 mutual friends</p>
+      <button>Add Friend</button>
+    </div>
+  </div>
+
+  <p>Friends suggestion list</p>
+  <div class="addfriend-box">
+    <img src="images/profilephoto-1.webp">
+    <div class="addfriend-description">
+      <p class="name-text">Oliver</p>
+      <p class="mutual-text">2 mutual friends</p>
+      <button>Add Friend</button>
+    </div>
+  </div>
+  <div class="addfriend-box">
+    <img src="images/profilephoto-2.jpg">
+    <div class="addfriend-description">
+      <p class="name-text">Mimi</p>
+      <p class="mutual-text">3 mutual friends</p>
+      <button>Add Friend</button>
+    </div>
+  </div>
+  <div class="addfriend-box">
+    <img src="images/profilephoto-3.png">
+    <div class="addfriend-description">
+      <p class="name-text">Rex</p>
+      <p class="mutual-text">4 mutual friends</p>
+      <button>Add Friend</button>
+    </div>
+  </div>
+
+  <p>Google Search design recreation (putting every element to div, as asked by the exercise)</p>
+  <div class="google-box">
+    <div class="google-logo">
+      <img src="images/google_logo.png">
+    </div>
+    <div class="google-bar">
+      <input type="text" placeholder="Search Google or type a URL">
+    </div>
+    <div class=google-buttons>
+      <button>Google Search</button>
+      <button>I'm Feeling Lucky</button>
+    </div>
+  </div>
+
+  <!-- Remember scroll position -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+
+      if (localStorage.getItem("my_app_name_here-quote-scroll") != null) {
+          $(window).scrollTop(localStorage.getItem("my_app_name_here-quote-scroll"));
+      }
+
+      $(window).on("scroll", function() {
+          localStorage.setItem("my_app_name_here-quote-scroll", $(window).scrollTop());
+      });
+
+    });
+  </script>
+</body>
+</html>

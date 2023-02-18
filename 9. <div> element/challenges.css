@@ -1,0 +1,174 @@
+body {margin: 50px 100px;}
+p {
+  text-decoration:underline;
+  margin: 40px 0px 5px 0px;
+}
+
+.squarediv-box {
+  background-color:red;
+  width: 200px;
+  height: 200px;
+}
+
+.circlediv-box {
+  background-color:green;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.survey-box{
+  border: 1px solid;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.survey-box > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+  margin: 0px 0px 20px 0px;
+}
+
+.ytmusic-box {
+  background-color: rgb(43, 43, 43);
+  padding: 25px 20px;
+  max-width: 450px;
+}
+.ytmusic-box > * {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0px;
+}
+
+.ytmusic-box > p {
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+  margin-top: 15px;
+}
+
+.ytmusic-box > h1 {font-size: 31px;}
+
+.twitter-box {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, .3);
+  border-radius: 4px;
+  display:inline-block;
+  padding: 10px 10px;
+}
+
+.twitter-box > img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100px;
+  vertical-align: middle;
+}
+
+.twitter-box > input {
+  width: 280px;
+  border: none;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.twitter-box > input:focus {
+  outline: none;
+}
+
+.twitter-box > button {
+  background-color: rgb(29, 155, 240);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 9px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: box-shadow .15s,
+    opacity .05s;
+  vertical-align: middle;
+}
+
+.twitter-box > button:hover {
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, .15);
+}
+
+.twitter-box > button:active {
+  opacity: 70%;
+}
+
+.addfriend-box {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, .3);
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.addfriend-box > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.addfriend-box > .addfriend-description {margin: 10px;}
+
+.addfriend-box > .addfriend-description > p {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.addfriend-box > .addfriend-description > .name-text {
+  font-size: 23px;
+  font-weight: bold; 
+  margin-bottom: 5px;
+  margin-top: 0px
+}
+
+.addfriend-box > .addfriend-description > .mutual-text {
+  font-size: 18px;
+  color: rgb(96, 96, 96);
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+.addfriend-box > .addfriend-description > button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(41, 134, 226);
+  color: white;
+  padding: 10px 25px;
+  transition: opacity .15s;
+}
+
+.addfriend-box > .addfriend-description > button:hover {opacity: 85%}
+
+.addfriend-box > .addfriend-description > button:active {opacity: 60%}
+
+.google-box > * {text-align: center;}
+
+.google-box > .google-logo > img {width: 250px;}
+
+.google-box > .google-bar > input {
+  width: 500px;
+  padding: 10px 15px 10px 15px;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, .35);
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.google-box > .google-bar > input:focus{
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .45);
+}
+
+.google-box > .google-buttons > button{
+  text-align: middle;
+  margin: 30px 10px;
+  border: none;
+  padding: 15px 25px;
+  transition: opacity .15s;
+}
+
+.google-box > .google-buttons > button:hover {opacity: 85%;}
+
+.google-box > .google-buttons > button:active {opacity: 60%;}
