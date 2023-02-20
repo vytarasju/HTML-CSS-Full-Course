@@ -1,0 +1,69 @@
+body {margin: 50px 100px;}
+body > p {
+  text-decoration:underline;
+  margin: 40px 0px 5px 0px;
+}
+
+
+.addfriend-box {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, .3);
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.addfriend-box > .addfriend-image > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.addfriend-box > .addfriend-description {margin: 10px;}
+
+.addfriend-box > .addfriend-description p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.addfriend-box > .addfriend-description > .name-text {
+  font-size: 23px;
+  font-weight: bold; 
+  margin-bottom: 5px;
+  margin-top: 0px
+}
+
+.addfriend-box > .addfriend-description > .addfriend-mutual {
+  margin-bottom: 10px; 
+}
+
+.addfriend-box > .addfriend-description > .addfriend-mutual > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px;
+}
+
+.addfriend-box > .addfriend-description > .addfriend-mutual > p {
+  font-size: 18px;
+  color: rgb(96, 96, 96);
+}
+
+.addfriend-box > .addfriend-description > .addfriend-mutual > img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 20px;
+
+}
+
+.addfriend-box > .addfriend-description > button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(41, 134, 226);
+  color: white;
+  padding: 10px 25px;
+  transition: opacity .15s;
+}
+
+.addfriend-box > .addfriend-description > button:hover {opacity: 85%}
+
+.addfriend-box > .addfriend-description > button:active {opacity: 60%}
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="challenges.css">
+  <title>Challenges</title>
+</head>
+<body>
+
+  <p>Friends suggestion nested list</p>
+  <div class="addfriend-box">
+    <div class="addfriend-image">
+      <img src="images/profilephoto-1.webp">
+    </div>
+    <div class="addfriend-description">
+      <p class="name-text">Oliver</p>
+      <div class="addfriend-mutual">
+        <img src="images/cat.png">
+        <p>2 mutual friends</p>
+      </div>
+      <button>Add Friend</button>
+    </div>
+  </div>
+  <div class="addfriend-box">
+    <div class="addfriend-image">
+      <img src="images/profilephoto-2.jpg">
+    </div>
+    <div class="addfriend-description">
+      <p class="name-text">Mimi</p>
+      <div class="addfriend-mutual">
+        <img src="images/cat.png">
+        <p>3 mutual friends</p>
+      </div>
+      <button>Add Friend</button>
+    </div>
+  </div>
+  <div class="addfriend-box">
+    <div class="addfriend-image">
+      <img src="images/profilephoto-3.png">
+    </div>
+    <div class="addfriend-description">
+      <p class="name-text">Rex</p>
+      <div class="addfriend-mutual">
+        <img src="images/cat.png">
+        <p>4 mutual friends</p>
+      </div>
+      <button>Add Friend</button>
+    </div>
+  </div>
+
+    <!-- Remember scroll position -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+  
+        if (localStorage.getItem("my_app_name_here-quote-scroll") != null) {
+            $(window).scrollTop(localStorage.getItem("my_app_name_here-quote-scroll"));
+        }
+  
+        $(window).on("scroll", function() {
+            localStorage.setItem("my_app_name_here-quote-scroll", $(window).scrollTop());
+        });
+  
+      });
+    </script>
+</body>
+</html>
