@@ -1,0 +1,95 @@
+body {margin: 50px 100px;}
+body > p {
+  text-decoration:underline;
+  margin: 40px 0px 5px 0px;
+}
+
+.notification-box {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px; 
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  max-width: 270px;
+}
+
+.notification-box > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.notification-box > div * {font-family: Roboto;}
+
+.notification-box > div button {
+  background-color: rgb(32, 133, 235);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding-left: 9px;
+  padding-right: 9px;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+.notification-box > div p {
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+}
+
+.followpage-grid {
+  display: grid;
+  row-gap: 10px;
+  font-family: Roboto;
+}
+
+.followpage-grid > div {
+  display: flex;
+  justify-content: middle;
+  align-items: center;
+}
+
+.followpage-grid > div > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.followpage-grid > div > button {
+  background-color: rgb(29, 155, 240);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 9px 13px;
+  font-weight: bold;
+  transition: box-shadow .15s,
+    opacity .05s;  
+}
+
+.followpage-grid > div > button:hover {box-shadow: 1px 4px 5px rgba(0, 0, 0, .15);}
+
+.followpage-grid > div > button:active {opacity: 70%;}
+
+.followpage-grid > div > div {flex: 1;}
+
+.followpage-grid > div > div * {
+  margin: 0;
+  font-size: 18px;
+}
+
+.followpage-grid > div > div > .followpage-text-name {font-weight: bold;}
+
+.followpage-grid > div > div > .followpage-text-tag {color: gray;}
+
+.followpage-grid > div > div > .followpage-text-status {
+  color: gray;
+  font-size: 15px;
+}
+

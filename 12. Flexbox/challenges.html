@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="challenges.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Challenges</title>
+</head>
+<body>
+  <p>Flexbox with fixed values</p>
+  <div style="
+    display:flex;
+    flex-direction: row;">
+    <div style="
+    background-color: lightblue;
+    width: 200px;"
+    >200px</div>
+    <div style="
+    background-color: lightpink;
+    width: 75px;"
+    >75px</div>
+  </div>
+  
+  <p>Flexbox with fixed values and adaptive size in the middle</p>
+  <div style="
+    display:flex;
+    flex-direction: row;">
+    <div style="
+    background-color: lightblue;
+    width: 50px;"
+    >item1</div>
+    <div style="
+    background-color: lightpink;
+    flex: 1;"
+    >item2</div>
+    <div style="
+    background-color: lightblue;
+    width: 75px;"
+    >item3</div>
+  </div>
+
+  <p>Flexbox with evenly spread items</p>
+  <div style="
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;">
+    <div style="
+    background-color: lightpink;"
+    >item1</div>
+    <div style="
+    background-color: lightpink;"
+    >item2</div>
+    <div style="
+    background-color: lightpink;"
+    >item3</div>
+    <div style="
+    background-color: lightpink;"
+    >item2</div>
+  </div>
+
+  <p>Flexbox with specific height, items in different sides</p>
+  <div style="
+  display: flex;
+  border: 1px solid grey;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;">
+    <div style="
+    background-color: lightpink;"
+    >item1</div>
+    <div style="
+    background-color: lightpink;"
+    >item2</div>
+  </div>
+
+  <p>Notification box</p>
+  <div class="notification-box">
+    <div>
+      <p>Home</p>
+      <button>14</button>
+    </div>
+    <div>
+      <p>Notifications</p>
+      <button>3</button>
+    </div>
+    <div>
+      <p>Messages</p>
+      <button>5</button>
+    </div>
+  </div>
+
+  <p>Instagram-ish follow page</p>
+  <div class="followpage-grid">
+    <div>
+      <img src="../09. DIV element/images/profilephoto-1.webp">
+      <div>
+        <p class="followpage-text-name">oliver</p>
+        <p class="followpage-text-tag">the cat</p>
+        <p class="followpage-text-status">Popular</p>
+      </div>
+      <button>Follow</button>
+    </div>
+    <div>
+      <img src="../09. DIV element/images/profilephoto-2.jpg">
+      <div>
+        <p class="followpage-text-name">Mimi</p>
+        <p class="followpage-text-tag">Sleepy Cat</p>
+        <p class="followpage-text-status">Popular</p>
+      </div>
+      <button>Follow</button>
+    </div>
+    <div>
+      <img src="../09. DIV element/images/profilephoto-3.png">
+      <div>
+        <p class="followpage-text-name">Rex</p>
+        <p class="followpage-text-tag">Happy Cat :)</p>
+        <p class="followpage-text-status">Popular</p>
+      </div>
+      <button>Follow</button>
+    </div>
+  </div>
+  <!-- Remember scroll position -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+
+      if (localStorage.getItem("my_app_name_here-quote-scroll") != null) {
+          $(window).scrollTop(localStorage.getItem("my_app_name_here-quote-scroll"));
+      }
+
+      $(window).on("scroll", function() {
+          localStorage.setItem("my_app_name_here-quote-scroll", $(window).scrollTop());
+      });
+
+    });
+  </script>
+</body>
+</html>
