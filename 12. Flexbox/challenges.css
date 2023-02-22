@@ -46,6 +46,8 @@ body > p {
   display: grid;
   row-gap: 10px;
   font-family: Roboto;
+  max-width: 600px;
+  min-width: 250px;
 }
 
 .followpage-grid > div {
@@ -93,3 +95,39 @@ body > p {
   font-size: 15px;
 }
 
+.navigation-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(144, 90, 198);
+  color: white;
+  padding: 0px 10px;
+  min-width: 430px;
+  column-gap: 40px;
+}
+
+.navigation-box > p {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.navigation-box > input {
+  border-radius: 15px;
+  border: none;
+  height: 20px;
+  font-size: 14px;
+  padding: 3px 10px;
+  flex: 1;
+  max-width: 600px;
+}
+
+.navigation-box > button {
+  border: 1.5px solid white;
+  padding: 5px 15px;
+  border-radius: 2px;
+  margin-left: 10px;
+  background-color: rgb(144, 90, 198);
+  color: white;
+  font-size: 15px;
+}
