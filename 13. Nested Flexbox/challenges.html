@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="challenges.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Challenges</title>
+</head>
+<body>
+  <p>First nested flexbox design</p>
+  <div style="
+    display: flex;">
+    <div style="
+      background-color: lightpink;
+      width: 100px;
+      display: flex;
+      justify-content: center;">
+      <p style="
+        background-color: black; 
+        color: white;">
+      item1
+      </p>
+    </div>
+    <div style="
+      background-color: lightblue;
+      width: 200px;">
+    </div>
+  </div>
+
+  <p>Second nested flexbox design</p>
+  <div style="
+    display: flex;">
+    <div style="
+      background-color: lightpink;
+      width: 100px;
+      display: flex;
+      justify-content: center;">
+    </div>
+    <div style="
+      background-color: lightblue;
+      width: 200px;">
+      <p style="margin: 0;">
+      row1
+      </p>
+      <div style="
+      display: flex;
+      justify-content: space-between;">
+        <p style="
+          background-color: black; 
+          color: white;
+          margin-top: 0;">
+        row2  
+        </p>
+        <p style="
+          background-color: black; 
+          color: white;
+          margin-top: 0;">
+        row2  
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p>Gmail window for iOS design recreation</p>
+  <div class="gmail-box">
+    <p>ALL INBOXES</p>
+    <div class="mail-box">
+      <img src="../09. DIV element/images/cat.png">
+      <div>
+        <div class="mailtitle-text">
+          <h3>Chewy Promotions</h3>
+          <p>4:58PM</p>
+        </div>
+        <h4>Biggest sales of the Year!</h4>
+        <p>Hey there! We're writing to tell you about our...</p>
+      </div>
+    </div>
+  </div>
+
+  <p>Gmail window for iOS with multiple nested mail boxes</p>
+  <div class="gmail-box">
+    <p>ALL INBOXES</p>
+    <div class="mail-box">
+      <img src="../09. DIV element/images/cat.png">
+      <div>
+        <div class="mailtitle-text">
+          <h3>Chewy Promotions</h3>
+          <p>4:58PM</p>
+        </div>
+        <div class="mailbottom-text">
+          <h4>Biggest sales of the Year!</h4>
+          <p>Hey there! We're writing to tell you about our...</p>
+        </div>
+      </div>
+    </div>
+    <div class="mail-box">
+      <img src="../09. DIV element/images/profilephoto-2.jpg">
+      <div>
+        <div class="mailtitle-text">
+          <h3>Best Buy</h3>
+          <p>12:32PM</p>
+        </div>
+        <div class="mailbottom-text">
+          <h4>Your Best Buy eReceipt</h4>
+          <p>Thank you for shopping at Best Buy, here is...</p>
+        </div>
+      </div>
+    </div>
+    <div class="mail-box">
+      <img src="../09. DIV element/images/profilephoto-1.webp">
+      <div>
+        <div class="mailtitle-text">
+          <h3>Netflix</h3>
+          <p>9:00AM</p>
+        </div>
+        <div class="mailbottom-text">
+          <h4>Here's what's coming soon to Netflix</h4>
+          <p>Brand new movies and shows, old favorites...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Remember scroll position -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+
+      if (localStorage.getItem("my_app_name_here-quote-scroll") != null) {
+          $(window).scrollTop(localStorage.getItem("my_app_name_here-quote-scroll"));
+      }
+
+      $(window).on("scroll", function() {
+          localStorage.setItem("my_app_name_here-quote-scroll", $(window).scrollTop());
+      });
+
+    });
+  </script>  
+</body>
+</html>
