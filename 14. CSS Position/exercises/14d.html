@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>14d</title>
+  </head>
+  <body style="height: 2000px">
+    <div style="
+      background-color: green;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      width: 100px;
+      ">right sidebar</div>
+
+
+    <div class="overlay" style="
+      background-color: rgba(0, 0, 0, .8);
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ">
+      <div class="modal" style="
+        background-color: white;
+        padding: 15px 30px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+      ">
+        <h1 style="
+          margin: 5px 0px;
+        ">Modal Title</h1>
+        <p style="
+          margin: 5px 0px;
+        ">This is a modal</p>
+        <button class="close-button" style="
+          margin-top: 10px;
+        ">Close<span style="
+          display: block; 
+          font-size: 14px;
+        "> made it work, since I've learned JS before 😺</span></button>
+      </div>  
+    </div>
+
+  <script>
+    const button = document.querySelector('.close-button')
+    const overlay = document.querySelector('.overlay')
+    const modal = document.querySelector('.modal')
+
+    button.addEventListener("click", () => {
+      modal.style.display = "none"
+      overlay.style.display = "none"
+    })
+  </script>
+
+  </body>
+</html>

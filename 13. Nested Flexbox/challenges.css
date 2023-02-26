@@ -12,6 +12,7 @@ body > p {
   padding: 10px 20px;
   border-radius: 5px;
   max-width: 475px;
+  min-width: 250px;
 }
 
 
@@ -58,4 +59,54 @@ body > p {
   font-size: 17px;
 }
 
-  
+.tweet-box {
+  display: flex;
+  gap: 15px;
+}
+
+.tweet-box * {
+  margin: 0;
+  font-family: Roboto, Arial;
+}
+
+.tweet-box > img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-top: 3px;
+}
+
+.tweet-content {
+  line-height: 25px;
+}
+
+.tweet-name {font-weight: 700;}
+
+.tweet-name > span {
+  font-weight: 400;
+  color: dimgrey;
+}
+
+.tweet-embedded {
+  margin-top: 15px;
+  display: flex;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  flex-basis: auto;
+}
+
+.thumbnail-embedded {
+  background-color: lightgrey;
+  width: 130px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  flex-shrink: 0;
+}
+
+.text-embedded {
+  line-height: 30px;
+  padding: 20px 15px;
+}
+
+.link-embedded {color: dimgrey;}

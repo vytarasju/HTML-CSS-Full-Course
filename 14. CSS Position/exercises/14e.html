@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>14e</title>
+    <style>
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
+        background-color: rgb(247, 247, 247);
+      }
+
+      .left-section {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+      }
+
+      .left-section > p {
+        margin-left: 10px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .left-section > img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 30px;
+      }
+
+      .right-section > button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        transition: opacity .15s;
+      }
+
+      .right-section > button:hover {opacity: 80%;}
+
+      .right-section > button:active {opacity: 60%;}
+
+      .right-section {margin-right: 50px;}
+
+      .right-section > .add {
+        background-color: rgb(25, 125, 225);
+        color: white;
+      }
+
+      .right-section > .message {background-color: rgb(224, 224, 224);}
+
+      .sidebar {
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 70px;
+        bottom: 0;
+        background-color: rgb(34, 34, 34);
+      }
+
+      .sidebar > .icons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 10px;
+      }
+
+      .sidebar > .icons > img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 30px;
+      }
+
+      .sidebar > .channels {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(62, 62, 62);
+        color: white;
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .channel-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+      }
+
+      .channel-title > * {margin: 0;}
+
+      .channel-title > h2 {font-size: 18px;}
+
+      .channel-title > h1 {
+        color: rgb(176, 176, 176);
+        font-weight:normal; 
+        font-size: 30px;
+      }
+
+      .sidebar > .channels > p {
+        color: rgb(176, 176, 176);
+        margin: 10px 0px;
+        font-size: 18px;
+      }
+
+    </style>
+  </head>
+  <body style="height: 2000px;">
+    <div class="header">
+      <div class="left-section">
+        <img src="../../09. DIV element/images/cat.png">
+        <p>Oliver Cat</p>
+      </div>
+      <div class="right-section">
+        <button class="add">Add Friend</button>
+        <button class="message">Message</button>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="icons">
+        <img src="../../09. DIV element/images/profilephoto-1.webp">
+        <img src="../../09. DIV element/images/profilephoto-2.jpg">
+        <img src="../../09. DIV element/images/profilephoto-3.png">
+      </div>
+      <div class="channels">
+        <div class="channel-title">
+          <h2>INFO</h2>
+          <h1>+</h1>
+        </div>
+        <p># new-videos</p>
+        <p># updates</p>
+        <p># faq</p>
+      </div>
+    </div>
+  </body>
+</html>
