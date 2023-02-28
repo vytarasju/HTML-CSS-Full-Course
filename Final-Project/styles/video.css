@@ -2,6 +2,19 @@
   width: 100%;
 }
 
+.time-stamp {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Roboto, Arial;
+  padding: 4px;
+  border-radius: 2px;
+}
+
 .video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;

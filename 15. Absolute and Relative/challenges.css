@@ -1,0 +1,95 @@
+.video-ad {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.video-ad > .video-box {
+  width: 250px;
+  height: 150px;
+  background-color: rgb(120, 120, 120);
+  position: relative;
+}
+
+.video-ad > .video-box > .close-button {
+  position: absolute;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 3px 7px;
+  left: -10px;
+  top: -10px;
+  cursor: pointer;
+  transition: background-color .15;
+}
+
+.video-ad > .video-box > .close-button:hover {background-color: rgb(50,50,50);}
+
+.video-ad > .video-box > .close-button:active {background-color: rgb(70,70,70);}
+
+.time-stamp {
+  position: absolute;
+  bottom: 6px;
+  right: 5px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Roboto, Arial;
+  padding: 4px;
+  border-radius: 1px;
+}
+
+.product-box {
+  display: inline-block;
+  position: relative;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+
+.product-box > img {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.discount {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 8px 13px;
+  top: 5px;
+  right: 4px;
+  border-top-right-radius: 10px;
+}
+
+.add-box {
+  position: absolute;
+  background-color: rgba(255, 255, 255, .8);
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+  border-radius: 10px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-box > button {
+  border: 2px solid black;
+  font-weight: 700;
+  padding: 10px 15px;
+  background-color: white;
+  transition: background-color .05s;
+}
+
+.add-box > button:hover {background-color: rgb(245, 245, 245);}
+
+.add-box > button:active {background-color: rgb(235, 235, 235);}
+
