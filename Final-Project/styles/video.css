@@ -56,3 +56,20 @@
   column-gap: 16px;
   row-gap: 40px;
 }
+
+.video-preview {
+  padding: 2px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  text-decoration: none;
+  transition: background-color .3s,
+  border-color .3s;
+}
+
+.video-preview-clicked-border {
+  border-color: grey;
+}
+
+.video-preview-clicked-bgcolor {
+  background-color: rgb(227, 227, 227);
+}
