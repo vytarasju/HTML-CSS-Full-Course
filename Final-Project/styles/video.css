@@ -26,7 +26,7 @@
   width: 36px;
 }
 
-.channel-icon > img {
+.channel-icon > a > img {
   width: 100%;
   border-radius: 25px;
 }
@@ -48,7 +48,9 @@
   color: rgb(96, 96, 96);
 }
 
-.video-author {margin-bottom: 4px;}
+.video-author {
+  margin-bottom: 4px;
+}
 
 .video-grid {
   display: grid;
@@ -61,10 +63,12 @@
   padding: 2px;
   border: 1px solid transparent;
   border-radius: 11px;
-  text-decoration: none;
   transition: background-color .3s,
   border-color .3s;
 }
+
+  
+.video-preview * {text-decoration: none;}
 
 .video-preview-clicked-border {
   border-color: grey;
