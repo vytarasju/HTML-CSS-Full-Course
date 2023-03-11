@@ -11,7 +11,6 @@
   color: white;
   font-size: 12px;
   font-weight: 500;
-  font-family: Roboto, Arial;
   padding: 4px;
   border-radius: 2px;
 }
@@ -83,8 +82,6 @@
 .video-title {
   margin-bottom: 9px;
   font-weight: 500;
-  line-height: 20px;
-  font-size: 14px;
 }
 
 .video-author,
@@ -99,9 +96,36 @@
 
 .video-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+}
+
+
+@media (max-width: 887px) {
+  .video-grid {grid-template-columns: 1fr 1fr;}
+
+  .video-title {
+    font-size:14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 887.1px) and (max-width: 1142px){
+  .video-grid {grid-template-columns: 1fr 1fr 1fr;}
+
+  .video-title {
+    font-size:14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1142.1px) {
+  .video-grid {grid-template-columns: 1fr 1fr 1fr 1fr;}
+
+  .video-title {
+    font-size:16px;
+    line-height: 24px;
+  }
 }
 
 .video-preview {

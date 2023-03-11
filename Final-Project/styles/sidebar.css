@@ -1,4 +1,12 @@
-.sidebar {
+@media (max-width: 791px) {
+  .sidebar{display:none;}
+
+  body {padding-left: 25px}
+}
+
+
+@media (min-width: 791.1px) and (max-width: 1142px) {
+  .sidebar {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -9,33 +17,85 @@
   flex-direction: column;
   padding-left: 5px;
   z-index: 99;
+  }
+
+  .button-sidebar > img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    margin-bottom: 6px;
+  }
+
+  .button-sidebar > p {
+    font-size: 10px;
+  }
+
+  .button-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    width: 64px;
+    padding: 16px 0 14px;
+    border-radius: 10px;
+    transition: background-color .05s;
+    cursor: pointer;
+  }
+
+  .button-sidebar:hover {background-color: rgb(239, 239, 239);}
+
+  .button-sidebar:active {background-color: rgb(224, 224, 224);}
+
+  body {padding-left: 96px}
 }
 
-.button-sidebar > img {
-  width: 24px;
-  height: 24px;
-  object-fit: cover;
-  margin-bottom: 6px;
+@media (min-width: 1142.1px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 57px;
+    width: 200px;
+    gap: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 11px 11px 0 20px;
+    z-index: 99;
+  }
+
+  .button-sidebar > img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    margin-left: 5px;
+  }
+  
+  .button-sidebar > p {
+    font-size: 12px;
+    font-weight: 500;
+    /* flex: 1; */
+  }
+  
+  .button-sidebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    gap: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 5px 0 5px;
+    border-radius: 10px;
+    transition: background-color .05s;
+    cursor: pointer;
+  }
+  
+  .button-sidebar:hover {background-color: rgb(239, 239, 239);}
+  
+  .button-sidebar:active {background-color: rgb(224, 224, 224);}
+  
+  body {padding-left: 250px}
 }
-
-.button-sidebar > p {
-  font-size: 10px;
-}
-
-.button-sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  width: 64px;
-  padding: 16px 0 14px;
-  border-radius: 10px;
-  transition: background-color .05s;
-  cursor: pointer;
-}
-
-.button-sidebar:hover {background-color: rgb(239, 239, 239);}
-
-.button-sidebar:active {background-color: rgb(224, 224, 224);}
